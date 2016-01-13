@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Todos</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <script src="javascripts/handlebars-v4.0.5.js"></script>
+    <script src="javascripts/jquery-1.11.2.min.js"></script>
+    <script src="javascripts/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <header><h1>Todos</h1></header>
+
+      <form action="#" method="post">
+        <input type="text" id="todo_name" />
+        <br><br>
+        <input type="submit" value="Add" />
+      </form>
+      <section id="todos_container">
+       
+      </section>
+    </main>
+
+    <script id="all_todos" type="text/x-handlebars-template">
+      {{#each todos}}
+      <li>{{> todo}}</li>
+      {{/each}}
+    </script>
+
+    <script id="todo" type="text/x-handlebars-partial">
+      {{title}} : 
+       <a class="remove" href="#"> remove</a>
+    </script>
+
+  </body>
+</html>
