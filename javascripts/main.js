@@ -26,6 +26,11 @@ $(function(){
     $("#menu").fadeToggle();
   })
 
+  $(".layout-preview:not(:last-child)").on("click", function() {
+    $(".layout-preview").removeClass("active-layout");
+    $(this).addClass("active-layout");
+  })
+
 
   //Handlebars.compile($("[script*=x-handlebars-template"]).html());
   //Handlebars.registerPartial("name", $([script*=x-handlebars-partial"]).html());

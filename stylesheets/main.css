@@ -61,6 +61,7 @@ main {
   padding: 40px;
   /* display: none; */
   color: white;
+  opacity: 0.9;
 }
 
 #menu ul li {
@@ -132,6 +133,16 @@ main {
 }
 .layout-preview {
   float: left;
+}
+
+.video-previews:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.active-layout {
+  background: rgba(200, 200, 200, 0.4);
 }
 
 
