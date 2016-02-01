@@ -48,17 +48,29 @@ ul li {
 #menu {
   height: 100%;
   width: 100%;
-  background: blue;
+  background: linear-gradient(to right bottom, rgba(183, 14, 133, .6), rgba(100, 12, 71, 1));
   position: fixed;
   top: 0;
   left: 0;
+  padding: 40px;
+  display: none;
 }
 
 #menu-launcher {
-  height: 30px;
-  width: 30px;
+  height: 60px;
+  width: 20px;
   z-index: 1;
-  background: red;
+  background: rgba(30, 76, 191, .6);
   position: fixed;
   top: 100px;
+}
+
+#menu-launcher:hover {
+  cursor: help;
+}
+
+#menu-inner {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right bottom, rgba(0, 0,0, .6), rgba(100, 12, 71, 1));;
 }

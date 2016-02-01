@@ -20,9 +20,11 @@ $(function(){
     $(".left + .left").css("top", vph/2 + "px");
     $(".right + .right").css("top", vph/2 + "px");
 
-  });
+  })
 
-  
+  $("#menu-launcher").on("click", function() {
+    $("#menu").fadeToggle();
+  })
 
 
   //Handlebars.compile($("[script*=x-handlebars-template"]).html());
