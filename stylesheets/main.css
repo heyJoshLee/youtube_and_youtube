@@ -1,10 +1,64 @@
 @import url("normalize.css");
 
-iframe {
+html, body,
+main, #videos-container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+iframe, article, li {
   margin: 0 auto;
 }
 
 main {
-  background: black;
-  text-align: center;
+  background: green;
+}
+
+ul {
+  padding: 0;
+  font-size: 0;
+
+}
+
+ul li {
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  float: right;
+}
+
+.left {
+  float: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.left + .left {
+}
+
+.right {
+  float: right;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+#menu {
+  height: 100%;
+  width: 100%;
+  background: blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#menu-launcher {
+  height: 30px;
+  width: 30px;
+  z-index: 1;
+  background: red;
+  position: fixed;
+  top: 100px;
 }
