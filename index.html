@@ -11,25 +11,34 @@
     <main>
       <section id="videos-container">
         <ul>
-          <li class="half-width half-height right"><iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe></li>
-          <li class="half-width half-height right"><iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe></li>
-          <li class="half-width half-height left"><iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe></li>
-          <li class="half-width half-height left"><iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe></li>
+            <li class="half-width half-height left">
+              <iframe id="video_1"  src="https://www.youtube.com/embed/fPDYj3IMkRI?rel=0" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="half-width half-height left">
+              <iframe id="video_2" src="https://www.youtube.com/embed/kfVsfOSbJY0?rel=0" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="half-width half-height right">
+              <iframe id="video_3" src="https://www.youtube.com/embed/UcTLJ692F70?rel=0" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="half-width half-height right">
+              <iframe id="video_4" src="https://www.youtube.com/embed/5UWpNE5ElQE?rel=0" frameborder="0" allowfullscreen></iframe>
+            </li>
         </ul>
       </section>
 
-      <section id="menu-launcher"></section>
+      <section id="menu-launcher">MENU</section>
       <section id="menu">
         <div id="menu-inner">
           <ul class="video-previews">
 
-            <li id="two-videos-layout" class="layout-preview active-layout">
+            <li id="two-videos-layout" class="layout-preview">
               <ul>
               <li class="full-preview"></li>
               <li class="full-preview"></li>
               </ul>
             </li>
 
+            <!--
             <li id="three-videos-layout" class="layout-preview">
               <ul>
               <li class="full-preview"></li>
@@ -37,8 +46,9 @@
               <li class="half-preview"></li>
               </ul>
             </li>
+            -->
 
-            <li  id="four-videos-layout" class="layout-preview">
+            <li  id="four-videos-layout" class="layout-preview active-layout">
               <ul>
               <li class="half-preview"></li>
               <li class="half-preview"></li>
@@ -50,7 +60,7 @@
             <li class="inputs">
               <form>
                 <ul class="input-list">
-                  <li><input id="video-1-input" class="video-input" type="text"></li>
+                  <li><input id="video-1-input" class="video-input" type="text" placeholder="https://www.youtube.com/watch?v=fPDYj3IMkRI"></li>
                   <br />
                   <li><input id="video-2-input" class="video-input" type="text"></li>
                   <br />
@@ -62,52 +72,13 @@
                 </ul>
               </form>
             </li>
+            <li>
+              <img src="images/url-screen.png">
+              <img id="arrow" src="images/arrow.png">
+            </li>
           </ul>
         </div>
       </section>
-
     </main>
-
-    <script type="x-handlebars-template" id="two-videos">
-      <ul>
-          <li id="video_1" class="full-width half-height right">
-            <iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe>
-          </li>
-          <li id="video_2" class="full-width half-height right">
-            <iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe>
-          </li>
-      </ul>
-    </script>
-
-    <script type="x-handlebars-template" id="three-videos">
-      <ul>
-            <li id="video_1" class="full-width half-height right">
-              <iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe>
-            </li>
-            <li id="video_2" class="half-width half-height right">
-              <iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe>
-            </li>
-            <li id="video_3" class="half-width half-height right left">
-              <iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe>
-            </li>
-        </ul>
-    </script>
-
-    <script type="x-handlebars-template" id="four-videos">
-      <ul>
-            <li id="video_1" class="half-width half-height right">
-              <iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe>
-            </li>
-            <li id="video_2" class="half-width half-height right">
-              <iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe>
-            </li>
-            <li id="video_3" class="half-width half-height  left">
-              <iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe>
-            </li>
-            <li id="video_4" class="half-width half-height  left">
-              <iframe src="https://www.youtube.com/embed/f8WsO__XcI0?rel=0" frameborder="0" allowfullscreen></iframe>
-            </li>
-        </ul>
-    </script>
   </body>
 </html>
