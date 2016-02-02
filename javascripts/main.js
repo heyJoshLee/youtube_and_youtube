@@ -1,7 +1,5 @@
 $(function(){
 
-  var video_urls = [];
-
   $(window).on("resize", function(){
     resize(); 
   })
@@ -111,7 +109,6 @@ $(function(){
     console.log($("#video-3-input").val());
     $("#video_4").attr("src", changeYoutubeUrl($("#video-4-input").val()));
   });
-  
 
   setupPage();
   
