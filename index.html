@@ -9,13 +9,76 @@
   </head>
   <body>
     <main>
+      <section id="videos-container">
+        <ul>
+            <li class="half-width half-height left">
+              <iframe id="video_1"  src="https://www.youtube.com/embed/fPDYj3IMkRI?rel=0" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="half-width half-height left">
+              <iframe id="video_2" src="https://www.youtube.com/embed/kfVsfOSbJY0?rel=0" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="half-width half-height right">
+              <iframe id="video_3" src="https://www.youtube.com/embed/UcTLJ692F70?rel=0" frameborder="0" allowfullscreen></iframe>
+            </li>
+            <li class="half-width half-height right">
+              <iframe id="video_4" src="https://www.youtube.com/embed/5UWpNE5ElQE?rel=0" frameborder="0" allowfullscreen></iframe>
+            </li>
+        </ul>
+      </section>
 
-      <iframe width="853" height="480" src="https://www.youtube.com/embed/wVH4MS6v23U?rel=0" frameborder="0" allowfullscreen></iframe>
-      <iframe width="853" height="480" src="https://www.youtube.com/embed/wVH4MS6v23U?rel=0" frameborder="0" allowfullscreen></iframe>
-    
+      <section id="menu-launcher">MENU</section>
+      <section id="menu">
+        <div id="menu-inner">
+          <ul class="video-previews">
 
-      <div id="open_menu">+</div>
+            <li id="two-videos-layout" class="layout-preview">
+              <ul>
+              <li class="full-preview"></li>
+              <li class="full-preview"></li>
+              </ul>
+            </li>
 
+            <!--
+            <li id="three-videos-layout" class="layout-preview">
+              <ul>
+              <li class="full-preview"></li>
+              <li class="half-preview"></li>
+              <li class="half-preview"></li>
+              </ul>
+            </li>
+            -->
+
+            <li  id="four-videos-layout" class="layout-preview active-layout">
+              <ul>
+              <li class="half-preview"></li>
+              <li class="half-preview"></li>
+              <li class="half-preview"></li>
+              <li class="half-preview"></li>
+              </ul>
+            </li>
+
+            <li class="inputs">
+              <form>
+                <ul class="input-list">
+                  <li><input id="video-1-input" class="video-input" type="text" placeholder="https://www.youtube.com/watch?v=fPDYj3IMkRI"></li>
+                  <br />
+                  <li><input id="video-2-input" class="video-input" type="text"></li>
+                  <br />
+
+                  <li><input id="video-3-input" class="video-input" type="text"></li>
+                  <br />
+
+                  <li><input id="video-4-input" class="video-input" type="text"></li>
+                </ul>
+              </form>
+            </li>
+            <li>
+              <img src="images/url-screen.png">
+              <img id="arrow" src="images/arrow.png">
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
   </body>
 </html>
