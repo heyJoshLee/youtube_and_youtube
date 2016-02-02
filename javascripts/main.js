@@ -31,6 +31,22 @@ $(function(){
     $(this).addClass("active-layout");
   })
 
+  var two_videos = Handlebars.compile($("#two-videos").html());
+  $("#two-videos-layout").on("click", function() {
+    $("#videos-container").html(two_videos());
+  })
+
+  var three_videos = Handlebars.compile($("#three-videos").html());
+  $("#three-videos-layout").on("click", function() {
+    $("#videos-container").html(three_videos());
+  })
+
+  var four_videos = Handlebars.compile($("#four-videos").html());
+  $("#four-videos-layout").on("click", function() {
+    $("#videos-container").html(four_videos());
+  })
+
+
 
   //Handlebars.compile($("[script*=x-handlebars-template"]).html());
   //Handlebars.registerPartial("name", $([script*=x-handlebars-partial"]).html());

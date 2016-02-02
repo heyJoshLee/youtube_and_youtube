@@ -40,9 +40,6 @@ main {
   left: 0;
 }
 
-.left + .left {
-}
-
 .right {
   float: right;
   position: fixed;
@@ -99,7 +96,6 @@ main {
   box-sizing: border-box;
   color: none;
 }
-
 
 .full-preview {
   display: inline-block;
